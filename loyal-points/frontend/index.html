@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Loyal Points DApp</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Loyal Points</h1>
+  <button id="connectButton">Connect Wallet</button>
+  <div id="walletAddress"></div>
+  <div id="balance"></div>
+  <div><button id="addTokenButton">Add LOYAL to MetaMask</button></div>
+
+  <div id="actions" style="display:none;">
+    <h2>Actions</h2>
+    <div>
+      <input type="number" id="mintAmount" placeholder="Amount to mint">
+      <button id="mintButton">Mint (Admin Only)</button>
+    </div>
+    <div>
+      <input type="number" id="burnAmount" placeholder="Amount to burn">
+      <button id="burnButton">Burn</button>
+    </div>
+    <div>
+      <input type="number" id="redeemAmount" placeholder="Amount to redeem">
+      <button id="redeemButton">Redeem</button>
+    </div>
+  </div>
+
+  <div id="status"></div>
+  <script src="https://cdn.jsdelivr.net/npm/ethers@6.15.0/dist/ethers.umd.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
